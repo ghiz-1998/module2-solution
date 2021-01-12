@@ -1,4 +1,213 @@
+/* Base styles */
+*{
+    box-sizing: border-box;
+
+}
+
+
 h1 {
-    color: red;
-    font-size: x-large;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+
+
+}
+
+p {
+    border:2px solid rgb(92, 51, 22);
+    background-color:rgb(197, 109, 46);
+    width: 90%;
+    height: 170px;
+    margin-left: auto;
+    color: white;
+    vertical-align: bottom;
+}
+
+
+/* Simple Responsive Framework */
+
+.row {
+    width: 100%;
+}
+
+/* For The Desktop */
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        float: left;
+        margin-top: 3%;
+        margin-left: -10px;
+    }
+
+    .col-lg-1 {
+        width: 33.33%;
+    }
+    .col-lg-2 {
+        width: 33.33%;
+    }
+    .col-lg-3 {
+        width: 33.34%;
+    }
+
+    /* Section Title */
+    article {
+        position: relative;
+        top: 38px;
+        left: 82%;
+    }
+    .chicken, .beef, .sushi {
+        border: 1px solid rgb(92, 51, 22);;
+        width: 80px;
+        text-align: center;
+        background-color:white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style:oblique;
+        font-weight: bolder;
+    }
+
+    /* Section */
+    p {
+        border:2px solid rgb(92, 51, 22);
+        background-color:rgb(197, 109, 46);
+        width: 90%;
+        height: 225px;
+        margin-left: auto;
+        color: white;
+        vertical-align: bottom;
+
+    }
+
+    .col-lg-3 p {
+        padding-top: 40px;
+
+
+        font-size: 16px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        border-radius: 3px ;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+/* For The Tablet */
+
+@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape){
+
+    .col-lg-1, .col-lg-2, .col-lg-3{
+        float: left;
+        margin-top: 3%;
+        margin-left: -10px;
+    }
+
+    .col-lg-1 {
+        width: 33.33%;
+    }
+    .col-lg-2 {
+        width: 33.33%;
+
+    }
+    .col-lg-3 {
+        width: 50%;
+    }
+
+    
+    /* Section Title */
+    article {
+        position: relative;
+        top: 37px;
+        left: 78.5%;
+    }
+
+    #col3 article {
+        left: 89.3%;
+    }
+
+    .chicken, .beef, .sushi {
+        border: 1px solid rgb(92, 51, 22);;
+        width: 80px;
+        text-align: center;
+        background-color:white;
+    }
+
+    /* Section */
+    div #col3 {
+        width: 100%;
+        margin-left: -50px;
+    }
+    p {
+        border:2px solid rgb(92, 51, 22);
+        background-color:rgb(197, 109, 46);
+        width: 90%;
+        height: 170px;
+        margin-left: auto;
+        color: white;
+        vertical-align: bottom;
+    }
+    .col-lg-3 p {
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        border-radius: 3px ;
+
+    }
+
+}
+
+/* For The Mobile */
+
+@media  (max-width: 767px) {
+
+    .col-lg-1, .col-lg-2, .col-lg-3{
+        float: left;
+        margin-top: 3%;
+        margin-left: -10px;
+    }
+
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        width: 100%;
+    }
+
+    
+    /* Section Title */
+    article {
+        position: relative;
+        top: 36px;
+        left: 82%;
+    }
+
+    .chicken, .beef, .sushi {
+        border: 1px solid rgb(92, 51, 22);;
+        width: 80px;
+        text-align: center;
+        background-color:white;
+    }
+
+    /* Section */
+    p {
+        border:2px solid rgb(92, 51, 22);
+        background-color:rgb(197, 109, 46);
+        width: 90%;
+        height: 190px;
+        margin-left: auto;
+        color: white;
+        vertical-align: bottom;
+    }
+
+    .col-lg-3 p {
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        border-radius: 3px ;
+
+    }
+
 }
